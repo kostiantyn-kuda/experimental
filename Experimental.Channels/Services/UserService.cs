@@ -1,3 +1,5 @@
+using Experimental.Channels.Models;
+
 namespace Experimental.Channels.Services;
 
 public sealed class UserService : IUserService

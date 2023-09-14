@@ -1,3 +1,5 @@
+using Experimental.Channels.Models;
+
 namespace Experimental.Channels.Abstractions;
 
 public interface IUserService

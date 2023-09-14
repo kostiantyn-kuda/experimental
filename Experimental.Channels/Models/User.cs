@@ -1,4 +1,4 @@
-﻿namespace Experimental.Channels;
+﻿namespace Experimental.Channels.Models;
 
 public class User
 {

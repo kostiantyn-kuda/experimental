@@ -1,4 +1,6 @@
-﻿var builder = CoconaApp.CreateBuilder();
+﻿using Experimental.Channels.Models;
+
+var builder = CoconaApp.CreateBuilder();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
 
