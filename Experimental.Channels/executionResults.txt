@@ -1,0 +1,73 @@
+.NET 6
+
+| Method                    | MaxNumberOfUsers | PageSize | numberOfDownloaders | numberOfPersisters | Mean         | Error      | StdDev     |
+|-------------------------- |----------------- |--------- |-------------------- |------------------- |-------------:|-----------:|-----------:|
+| AsyncHandlingInOneThread  | 10               | 5        | ?                   | ?                  |    486.30 ms |   9.501 ms |  12.016 ms |
+| AsyncHandlingInOneThread  | 10               | 10       | ?                   | ?                  |    492.27 ms |   9.718 ms |  14.840 ms |
+| AsyncHandlingInOneThread  | 10               | 100      | ?                   | ?                  |    487.50 ms |   9.654 ms |  16.393 ms |
+| AsyncHandlingInOneThread  | 100              | 5        | ?                   | ?                  |  4,813.27 ms |  41.670 ms |  38.978 ms |
+| AsyncHandlingInOneThread  | 100              | 10       | ?                   | ?                  |  4,941.97 ms |  96.269 ms | 114.602 ms |
+| AsyncHandlingInOneThread  | 100              | 100      | ?                   | ?                  |  5,011.19 ms |  97.729 ms | 108.625 ms |
+| AsyncHandlingInOneThread  | 1000             | 5        | ?                   | ?                  | 48,417.65 ms | 211.844 ms | 176.899 ms |
+| AsyncHandlingInOneThread  | 1000             | 10       | ?                   | ?                  | 49,907.67 ms | 844.666 ms | 748.775 ms |
+| AsyncHandlingInOneThread  | 1000             | 100      | ?                   | ?                  | 49,420.75 ms | 698.149 ms | 653.049 ms |
+| AsyncHandlingWithChannels | 10               | 5        | 1                   | 1                  |    348.13 ms |   6.934 ms |  15.074 ms |
+| AsyncHandlingWithChannels | 10               | 5        | 5                   | 5                  |     86.27 ms |   1.722 ms |   1.691 ms |
+| AsyncHandlingWithChannels | 10               | 5        | 10                  | 5                  |     69.70 ms |   1.354 ms |   1.760 ms |
+| AsyncHandlingWithChannels | 10               | 5        | 20                  | 5                  |     70.53 ms |   1.389 ms |   1.600 ms |
+| AsyncHandlingWithChannels | 10               | 10       | 1                   | 1                  |    347.34 ms |   6.835 ms |  14.714 ms |
+| AsyncHandlingWithChannels | 10               | 10       | 5                   | 5                  |     83.57 ms |   1.606 ms |   2.031 ms |
+| AsyncHandlingWithChannels | 10               | 10       | 10                  | 5                  |     69.04 ms |   1.367 ms |   2.169 ms |
+| AsyncHandlingWithChannels | 10               | 10       | 20                  | 5                  |     68.96 ms |   1.365 ms |   3.191 ms |
+| AsyncHandlingWithChannels | 10               | 100      | 1                   | 1                  |    345.60 ms |   6.858 ms |  12.190 ms |
+| AsyncHandlingWithChannels | 10               | 100      | 5                   | 5                  |     83.78 ms |   1.652 ms |   2.668 ms |
+| AsyncHandlingWithChannels | 10               | 100      | 10                  | 5                  |     68.82 ms |   1.359 ms |   2.586 ms |
+| AsyncHandlingWithChannels | 10               | 100      | 20                  | 5                  |     68.79 ms |   1.356 ms |   2.770 ms |
+| AsyncHandlingWithChannels | 100              | 5        | 1                   | 1                  |  3,254.18 ms |  42.478 ms |  37.656 ms |
+| AsyncHandlingWithChannels | 100              | 5        | 5                   | 5                  |    661.68 ms |  11.856 ms |  18.458 ms |
+| AsyncHandlingWithChannels | 100              | 5        | 10                  | 5                  |    348.43 ms |   6.959 ms |   6.509 ms |
+| AsyncHandlingWithChannels | 100              | 5        | 20                  | 5                  |    349.87 ms |   6.926 ms |   8.759 ms |
+| AsyncHandlingWithChannels | 100              | 10       | 1                   | 1                  |  3,300.21 ms |  65.586 ms |  61.349 ms |
+| AsyncHandlingWithChannels | 100              | 10       | 5                   | 5                  |    662.79 ms |  12.069 ms |  19.489 ms |
+| AsyncHandlingWithChannels | 100              | 10       | 10                  | 5                  |    345.28 ms |   5.763 ms |   5.109 ms |
+| AsyncHandlingWithChannels | 100              | 10       | 20                  | 5                  |    350.04 ms |   6.731 ms |   5.966 ms |
+| AsyncHandlingWithChannels | 100              | 100      | 1                   | 1                  |  3,466.14 ms |  68.544 ms | 110.685 ms |
+| AsyncHandlingWithChannels | 100              | 100      | 5                   | 5                  |    670.83 ms |  13.092 ms |  21.510 ms |
+| AsyncHandlingWithChannels | 100              | 100      | 10                  | 5                  |    351.98 ms |   5.519 ms |   4.893 ms |
+| AsyncHandlingWithChannels | 100              | 100      | 20                  | 5                  |    350.32 ms |   6.437 ms |   5.707 ms |
+| AsyncHandlingWithChannels | 1000             | 5        | 1                   | 1                  | 33,139.33 ms | 486.337 ms | 406.113 ms |
+| AsyncHandlingWithChannels | 1000             | 5        | 5                   | 5                  |  6,451.86 ms |  94.589 ms |  88.479 ms |
+| AsyncHandlingWithChannels | 1000             | 5        | 10                  | 5                  |  3,193.40 ms |  40.829 ms |  36.194 ms |
+| AsyncHandlingWithChannels | 1000             | 5        | 20                  | 5                  |  3,207.62 ms |  60.111 ms |  61.730 ms |
+| AsyncHandlingWithChannels | 1000             | 10       | 1                   | 1                  | 33,292.47 ms | 120.187 ms |  93.834 ms |
+| AsyncHandlingWithChannels | 1000             | 10       | 5                   | 5                  |  6,532.98 ms | 126.884 ms | 118.687 ms |
+| AsyncHandlingWithChannels | 1000             | 10       | 10                  | 5                  |  3,201.14 ms |  38.170 ms |  35.704 ms |
+| AsyncHandlingWithChannels | 1000             | 10       | 20                  | 5                  |  3,210.20 ms |  56.729 ms |  53.064 ms |
+| AsyncHandlingWithChannels | 1000             | 100      | 1                   | 1                  | 34,493.37 ms | 571.389 ms | 586.774 ms |
+| AsyncHandlingWithChannels | 1000             | 100      | 5                   | 5                  |  6,607.91 ms | 131.732 ms | 250.634 ms |
+| AsyncHandlingWithChannels | 1000             | 100      | 10                  | 5                  |  3,205.60 ms |  23.375 ms |  20.721 ms |
+| AsyncHandlingWithChannels | 1000             | 100      | 20                  | 5                  |  3,189.09 ms |  31.019 ms |  29.015 ms |
+| AsyncHandlingWithParallel | 10               | 5        | ?                   | ?                  |    100.08 ms |   2.001 ms |   2.601 ms |
+| AsyncHandlingWithParallel | 10               | 10       | ?                   | ?                  |     53.59 ms |   1.063 ms |   2.172 ms |
+| AsyncHandlingWithParallel | 10               | 100      | ?                   | ?                  |     53.32 ms |   1.058 ms |   2.366 ms |
+| AsyncHandlingWithParallel | 100              | 5        | ?                   | ?                  |    976.11 ms |  18.719 ms |  23.673 ms |
+| AsyncHandlingWithParallel | 100              | 10       | ?                   | ?                  |    507.81 ms |   9.588 ms |  26.409 ms |
+| AsyncHandlingWithParallel | 100              | 100      | ?                   | ?                  |    449.11 ms |   8.814 ms |  14.481 ms |
+| AsyncHandlingWithParallel | 1000             | 5        | ?                   | ?                  |  9,708.32 ms | 103.204 ms |  91.488 ms |
+| AsyncHandlingWithParallel | 1000             | 10       | ?                   | ?                  |  5,054.08 ms |  83.499 ms |  74.020 ms |
+| AsyncHandlingWithParallel | 1000             | 100      | ?                   | ?                  |  4,543.07 ms |  86.194 ms |  88.515 ms |
+
+// * Legends *
+  MaxNumberOfUsers    : Value of the 'MaxNumberOfUsers' parameter
+  PageSize            : Value of the 'PageSize' parameter
+  numberOfDownloaders : Value of the 'numberOfDownloaders' parameter
+  numberOfPersisters  : Value of the 'numberOfPersisters' parameter
+  Mean                : Arithmetic mean of all measurements
+  Error               : Half of 99.9% confidence interval
+  StdDev              : Standard deviation of all measurements
+  1 ms                : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 02:28:09 (8889.53 sec), executed benchmarks: 54
+
+Global total time: 02:28:17 (8897.01 sec), executed benchmarks: 54
