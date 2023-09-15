@@ -71,3 +71,40 @@
 Run time: 02:28:09 (8889.53 sec), executed benchmarks: 54
 
 Global total time: 02:28:17 (8897.01 sec), executed benchmarks: 54
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+InvocationCount=1  UnrollFactor=1  
+
+| Method                    | MaxNumberOfUsers | PageSize | numberOfDownloaders | numberOfPersisters | Mean     | Error    | StdDev   |
+|-------------------------- |----------------- |--------- |-------------------- |------------------- |---------:|---------:|---------:|
+| AsyncHandlingWithChannels | 1000             | 100      | 10                  | 5                  |  3.247 s | 0.0494 s | 0.0607 s |
+| AsyncHandlingInOneThread  | 1000             | 100      | ?                   | ?                  | 49.528 s | 0.3354 s | 0.3138 s |
+| AsyncHandlingWithParallel | 1000             | 100      | ?                   | ?                  |  4.430 s | 0.0626 s | 0.0555 s |
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Hints *
+Outliers
+  UsersHandlerBenchmarks.AsyncHandlingWithChannels: InvocationCount=1, UnrollFactor=1 -> 5 outliers were removed (3.51 s..6.17 s)
+  UsersHandlerBenchmarks.AsyncHandlingWithParallel: InvocationCount=1, UnrollFactor=1 -> 1 outlier  was  removed (4.57 s)
+
+// * Legends *
+  MaxNumberOfUsers    : Value of the 'MaxNumberOfUsers' parameter
+  PageSize            : Value of the 'PageSize' parameter
+  numberOfDownloaders : Value of the 'numberOfDownloaders' parameter
+  numberOfPersisters  : Value of the 'numberOfPersisters' parameter
+  Mean                : Arithmetic mean of all measurements
+  Error               : Half of 99.9% confidence interval
+  StdDev              : Standard deviation of all measurements
+  1 s                 : 1 Second (1 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:23:19 (1399.18 sec), executed benchmarks: 3
+
+Global total time: 00:23:29 (1409.88 sec), executed benchmarks: 3
+// * Artifacts cleanup *
+Artifacts cleanup is finished

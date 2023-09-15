@@ -1,9 +1,6 @@
-﻿using System.ComponentModel;
-using BenchmarkDotNet.Order;
+﻿namespace Experimental.Channels;
 
-namespace Experimental.Channels;
-
-[Orderer(SummaryOrderPolicy.Method)]
+//[Orderer(SummaryOrderPolicy.Method)]
 public class UsersHandlerBenchmarks
 {
     private readonly Faker<User> _userFaker;
