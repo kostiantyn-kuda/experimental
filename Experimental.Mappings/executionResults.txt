@@ -1,0 +1,8 @@
+| Method         | NumberOfRecords | Mean         | Error       | StdDev     | Median       |
+|--------------- |---------------- |-------------:|------------:|-----------:|-------------:|
+| WithAutomapper | 10000           |   1,200.5 us |   128.62 us |   360.7 us |   1,065.8 us |
+| WithMapperly   | 10000           |     364.6 us |    49.86 us |   137.3 us |     314.2 us |
+| WithAutomapper | 100000          |  22,865.5 us |   758.19 us | 2,211.7 us |  22,272.8 us |
+| WithMapperly   | 100000          |  14,666.1 us |   485.94 us | 1,417.5 us |  14,777.2 us |
+| WithAutomapper | 500000          | 168,643.7 us | 3,324.90 us | 6,162.9 us | 168,091.9 us |
+| WithMapperly   | 500000          | 129,591.9 us | 2,588.62 us | 4,667.8 us | 128,544.4 us |
