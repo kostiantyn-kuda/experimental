@@ -7,10 +7,11 @@ public class UsersHandlerBenchmarks
     private User[] _users;
     private string _outputDirectory;
 
-    [Params(100, 1000, 10000)]
+    //[Params(10, 100, 300)]
+    [Params(300)]
     public int MaxNumberOfUsers { get; set; }
     
-    [Params(5, 10, 100)]
+    [Params(10, 25, 100)]
     public int PageSize { get; set; }
     
     public IEnumerable<object[]> ChannelsSource() => new List<object[]>
@@ -160,7 +161,7 @@ public class UsersHandlerBenchmarks
                 await Task.WhenAll(internalTasks);
                     
                 userWithImageChannel.Writer.Complete();
-            })    
+            })
         );
 
         // data persistence
@@ -233,9 +234,9 @@ public class UsersHandlerBenchmarks
 
 public class User
 {
-    public Guid   Id        { get; set; }
+    public Guid Id { get; set; }
     public string FirstName { get; set; } 
-    public string LastName  { get; set; }
-    public int    Age       { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
     public string AvatarUrl { get; set; }
 }

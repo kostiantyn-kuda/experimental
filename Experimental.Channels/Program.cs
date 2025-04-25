@@ -12,4 +12,6 @@
 //
 // var a = 1;
 
-BenchmarkRunner.Run<UsersHandlerBenchmarks>();
+var summary = BenchmarkRunner.Run<UsersHandlerBenchmarks>();
+var a = summary;
+Console.ReadLine();
