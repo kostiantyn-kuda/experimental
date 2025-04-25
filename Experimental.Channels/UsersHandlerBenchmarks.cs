@@ -7,7 +7,7 @@ public class UsersHandlerBenchmarks
     private User[] _users;
     private string _outputDirectory;
 
-    [Params(10, 100, 1000)]
+    [Params(100, 1000, 10000)]
     public int MaxNumberOfUsers { get; set; }
     
     [Params(5, 10, 100)]
@@ -233,9 +233,9 @@ public class UsersHandlerBenchmarks
 
 public class User
 {
-    public Guid Id { get; set; }
+    public Guid   Id        { get; set; }
     public string FirstName { get; set; } 
-    public string LastName { get; set; }
-    public int Age { get; set; }
+    public string LastName  { get; set; }
+    public int    Age       { get; set; }
     public string AvatarUrl { get; set; }
 }

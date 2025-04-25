@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental.Channels", "Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental.Mappings", "Experimental.Mappings\Experimental.Mappings.csproj", "{A1593450-6741-4E58-A73C-B50B0168B9EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental.Docker", "Experimental.Docker\Experimental.Docker.csproj", "{844C7C0A-74E0-4A5E-BB31-E195BF4B4A9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A1593450-6741-4E58-A73C-B50B0168B9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1593450-6741-4E58-A73C-B50B0168B9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1593450-6741-4E58-A73C-B50B0168B9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844C7C0A-74E0-4A5E-BB31-E195BF4B4A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844C7C0A-74E0-4A5E-BB31-E195BF4B4A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844C7C0A-74E0-4A5E-BB31-E195BF4B4A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844C7C0A-74E0-4A5E-BB31-E195BF4B4A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
